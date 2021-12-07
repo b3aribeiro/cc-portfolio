@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>b3a | CC Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>Beatriz Ribeiro</h1>
+      <ul>
+        <li>Project #1: <a href="p1.html"> lost & found </a></li>
+        <li>Project #2: <a href="p2.html"> face generator </a></li>
+        <li>Project #3: <a href="p3.html"> experimental clock </a></li>
+        <li>Project #4: <a href="p4.html"> exquisite corpse </a></li>
+        <li>Project #5: <a href="p5.html"> optical illusion </a></li>
+        <li>Project #6: <a href="p6.html"> data portrait </a></li>
+        <li>Project #7: <a href="p7.html"> bibliographical game </a></li>
+        <li class="red">Project #8: <a href="p8.html"> experimental camera </a></li> 
+        <li>Project #9: <a href="p9.html"> consentful interface </a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      
+      <h1>Project 8# Experimental Camera</h1>
+
+      <div class="fullwidth">
+        
+        <!--<img width="10px" height="10px"
+          src="/"/>-->
+        <iframe width="600px" height="400px" allow="camera"
+          src="https://editor.p5js.org/b3aribeiro/full/Ll0nalMum"></iframe> 
+      </div>
+      
+      <h1>Description</h1>
+      
+      <p>
+      Conventional cameras imitate the resolution, depth of field, and color range of the human eyes. 
+      For this prototype, make sure you have good light so your face is visible. 
+      Show your little nose to the camera and use it to control both paddles.
+      Left paddle is controled by moving your nose through the X-axis, while
+      Right paddle is controld by moving your nose through the Y-axis. 
+      Battle against yourself and have fun. 
+      </p>
+      
+      <div class="fullwidth"> 
+         <img width="600px" height="400px"
+          src="https://cdn.glitch.me/7f1f4efb-bcb9-43ca-942f-803f8367ea0e%2FExperimental2.jpg?v=1637216637808"/>
+      </div>
+    
+      <h1>Design Process</h1>
+      <p>
+      I'm often have issues with my self-image, or better saying, my self-digital image. 
+      While it's no big deal to look at myself in a mirror, it causes me discomfort 
+      to look at my flipped image on a camera. That being said, I wanted my experimental camera 
+      to create a space where one can be playful and comfortable, without exposing themselves. 
+      I also wanted to play with clmtrkr.js library so... :) I began sketching ideas where I could make use of that tool.
+      </p>
+      
+      <div class="fullwidth"> 
+         <img width="600px" height="400px"
+          src="https://cdn.glitch.me/7f1f4efb-bcb9-43ca-942f-803f8367ea0e%2FExperimental3.jpg?v=1637216640921"/>
+      </div>
+      
+      <p>
+        IDEA 1: Blinkin' n' Jumpin' —> running game like the google dinosaur, but you control jumps through blinking. 
+        But blinking seemed to be a problem between some of my colleagues, so that made me rethink this idea.
+      </p>
+      <p>
+        IDEA 2: Pong versus yourself —> You control both padles by moving your face through x and y axis. 
+      </p>
+      <p>
+        IDEA 3: Pong multiplayer —> Each player controls one paddle with their face. They compete to score more points. 
+      </p>
+      
+      <p>
+       Once I'd decided on my idea (2) I began my prototyping. I took Shiffman's Pong Challenge 
+        and removed its controls so I could add the clmtrkr.js library.
+        I wanted to detect someone's movement so that person could control both paddles.
+        Initially, I thought about using right and left hand, like a battle of dextrity between your hands.
+        Then I realized the game experience would be more interesting if I made if more clumsy.
+        To that end, changed the movemnt to the user's nose, so one would need to move
+        awkwardly around the screen, between W and Y axis. 
+      </p>   
+      <div class="fullwidth"> 
+         <img width="600px" height="400px"
+          src="https://cdn.glitch.me/7f1f4efb-bcb9-43ca-942f-803f8367ea0e%2FExperimental1.jpg?v=1637216630338"/>
+      </div>
+     
+      <h1>Reflection</h1>
+      <p>
+      Through this process, I've learned not only the technicalities of receiving, 
+        decoding and coding through the use of someone's image, but it also made me 
+        question how intrusive applications might be. Function hide(), for instance, 
+        made me think a lot about consent, especially because my user might not truly 
+        understand how and I'm using their image and "allow camera" button doesn't expose 
+        that.  For future iterations, I could create a boarding interaction, explaining 
+        to my user how am designing controls and asking how comfortable they feel 
+        about seeing/exposing their image, giving them the control on how clear the 
+        camera image has to be.
+     </p>
+      
+       
+      <h1>Credits</h1>
+      
+      <p>
+        This project was created based on the <a href="https://parsonsdt.github.io/critical-computation-2021/assignment/8.html">
+        Critical Computation (2021) Assignment #8.</a>. 
+        It makes use of 
+        <a href="https://github.com/auduno/clmtrackr"> clmtrkr.js library </a> for face tracking and 
+        <a href="https://dev.tube/video/IIrC5Qcb2G4"> Daniel Shiffman's Pong Challenge</a>. 
+      </p>      
+    </div>
+      
+  </body>
+</html>
